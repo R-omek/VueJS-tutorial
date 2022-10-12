@@ -11,9 +11,6 @@ const App = {
         }
     },
     methods: {
-        inputChangeHandler(event) {
-            this.inputValue = event.target.value
-        },
         addNewNotes() {
             if (this.inputValue !== '') {
                 this.notes.push(this.inputValue)
@@ -37,7 +34,6 @@ const App = {
             if(value.length > 10) {
                 this.inputValue = ''
             }
-            console.log(value)
         }
     }
 }
